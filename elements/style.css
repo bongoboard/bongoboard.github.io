@@ -335,7 +335,6 @@ a {
 a:focus,
 a:hover {
 	color: #037ef3;
-	
 }
 
 .container {
@@ -371,6 +370,22 @@ a:hover {
 .para:focus,
 .para:hover {
 	color: #fff
+}
+
+.link {
+	color:  #fcba03;
+}
+
+.link:focus,
+.link:hover {
+	color:  #037ef3;
+	font-weight: 700
+}
+
+.scale
+{
+    height: 1em; 
+    width: auto;
 }
 
 .alias {
