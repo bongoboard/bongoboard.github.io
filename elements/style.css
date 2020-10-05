@@ -385,7 +385,7 @@ a:hover {
 .scale
 {
     height: 1em; 
-    width: auto;
+    width: 1em;
 }
 
 .alias {
