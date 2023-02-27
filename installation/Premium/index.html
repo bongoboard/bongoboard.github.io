@@ -124,7 +124,105 @@
                             <h2>প্রিমিয়াম ভার্শন পৃষ্ঠা</h2>
               <h4>আপনাকে কিছু সময় অপেক্ষা করতে হতে পারে</h4>
                             <span class="border"></span>
-                        
+                        <style>
+
+ .timer-button {
+
+  background-color: #4CAF50;
+
+  border: none;
+
+  color: white;
+
+  padding: 15px 32px;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  display: inline-block;
+
+  border-radius: 10px;
+
+  font-size: 16px;
+
+  margin: 4px 2px;
+
+  cursor: pointer;
+
+  -webkit-transition-duration: 0.4s;
+
+  transition-duration: 0.4s;
+
+ }
+
+</style>
+
+<div dir="ltr" style="text-align: left;" trbidi="on">
+
+ <center>
+
+  <span id="countdown">আপনাকে ৩০ সেকেন্ড অপেক্ষা করতে হবে।</span></center>
+
+ <br />
+
+ <a class="timer-button" href="https://desiboard.github.io/installation/Premium/DesiBoardPremium.apk" id="download_link" style="display: none;">Download Now</a>
+
+ <noscript>JavaScript needs to be enabled in order to be able to download.</noscript>
+
+</div>
+
+</div>
+
+<script type="application/javascript">
+
+ (function() {
+
+  var message = "%d seconds before download link appears";
+
+  // seconds before download link becomes visible
+
+  var count = 30;
+
+  var countdown_element = document.getElementById("countdown");
+
+  var download_link = document.getElementById("download_link");
+
+  var timer = setInterval(function() {
+
+   // if countdown equals 0, the next condition will evaluate to false and the else-construct will be executed
+
+   if (count) {
+
+    // display text
+
+    countdown_element.innerHTML = "You have to wait %d seconds.".replace("%d", count);
+
+    // decrease counter
+
+    count--;
+
+   } else {
+
+    // stop timer
+
+    clearInterval(timer);
+
+    // hide countdown
+
+    countdown_element.style.display = "none";
+
+    // show download link
+
+    download_link.style.display = "";
+
+   }
+
+  }, 1000);
+
+ })();
+
+</script>
                         
                     </div>
                 </div>
